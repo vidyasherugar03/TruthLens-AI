@@ -218,3 +218,29 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+venv/
+
+# Model files
+models/*.pkl
+models/*.joblib
+
+# Dataset files
+dataset/*.csv
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code local settings
+.vscode/
+__pycache__/
+*.pyc
+.env
+*.pkl
+*.joblib
