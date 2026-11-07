@@ -43,3 +43,28 @@ Day 1: Project setup and GitHub integration.
 TruthLens AI is an educational project.
 Its predictions do not independently verify
 the factual accuracy of news articles.
+
+## Model Evaluation
+
+TruthLens AI uses a Linear Support Vector Machine (SVM) model for fake-like and real-like news classification.
+
+### Evaluation Metrics
+
+| Metric | Score |
+|---|---:|
+| Accuracy | 95.01% |
+| Precision | 94.65% |
+| Recall | 94.07% |
+| F1-Score | 94.36% |
+| ROC-AUC | 98.84% |
+
+### Evaluation Graphs
+
+#### Confusion Matrix
+![Confusion Matrix](screenshots/confusion_matrix.png)
+
+#### ROC Curve
+![ROC Curve](screenshots/roc_curve.png)
+
+### Note
+These results are based on the held-out test split of the WELFake dataset. Predictions indicate learned text patterns and do not establish whether a news article is factually true.
