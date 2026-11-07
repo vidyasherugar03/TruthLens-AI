@@ -5,7 +5,8 @@
 [![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python)](https://www.python.org/)
 
 ## 🌐 Live Demo
-**Try the application:** https://truthlens-ai-ewdzctnpkf7pyvuywwbvj.streamlit.app/
+
+[Click here to use TruthLens AI](https://truthlens-ai-ewdzctnpkf7p7yvuwywbvj.streamlit.app/)
 
 ## 📌 About the Project
 TruthLens AI is an interactive web application that uses Natural Language Processing (NLP) and Machine Learning to analyse news headlines and articles.
@@ -136,5 +137,6 @@ This is an educational machine-learning project. Predictions are based on patter
 Developed as an academic Data Science project to demonstrate practical skills in NLP, Machine Learning, Explainable AI and web application development.
 
 ## 🔗 Project Links
-- **GitHub:** https://github.com/vidyasherugar03/TruthLens-AI
-- **Live Application:** https://truthlens-ai-ewdzctnpkf7pyvuywwbvj.streamlit.app/
+
+- 💻 GitHub Repository: [TruthLens AI](https://github.com/vidyasherugar03/TruthLens-AI)
+- 🌐 Live Website: [Try TruthLens AI](https://truthlens-ai-ewdzctnpkf7p7yvuwywbvj.streamlit.app/)
