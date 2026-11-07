@@ -1,70 +1,140 @@
-
-# TruthLens AI 🔍
-
+# 🔍 TruthLens AI
 ### Explainable Fake News Detection Using NLP and Machine Learning
 
-## About the Project
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-red?logo=streamlit)](https://truthlens-ai-ewdzctnpkf7pyvuywwbvj.streamlit.app/)
+[![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python)](https://www.python.org/)
 
-TruthLens AI is a Machine Learning based web
-application that analyzes news articles using
-Natural Language Processing.
+## 🌐 Live Demo
+**Try the application:** https://truthlens-ai-ewdzctnpkf7pyvuywwbvj.streamlit.app/
 
-It predicts whether an article resembles fake
-or real news based on patterns learned from
-labelled training data.
+## 📌 About the Project
+TruthLens AI is an interactive web application that uses Natural Language Processing (NLP) and Machine Learning to analyse news headlines and articles.
 
-The application also explains influential words
-behind its predictions.
+It predicts whether the entered text resembles fake-like or real-like news based on patterns learned from a labelled dataset. It also highlights influential words to help users understand the model's predictions.
 
-## Objectives
+## 🎯 Objectives
+- Analyse news articles using NLP.
+- Clean and preprocess textual data.
+- Convert text into numerical features using TF-IDF.
+- Train and compare machine-learning algorithms.
+- Explain predictions using influential text features.
+- Build and deploy an interactive web application.
 
-- Detect suspicious news language patterns.
-- Apply NLP techniques to news articles.
-- Train Machine Learning classification models.
-- Explain model predictions.
-- Build an interactive web application.
-
-## Technologies
-
+## 🛠️ Technologies Used
 - Python
 - Pandas and NumPy
-- NLP
-- TF-IDF
 - Scikit-learn
+- Natural Language Processing (NLP)
+- TF-IDF
+- Logistic Regression
+- Multinomial Naive Bayes
+- Linear Support Vector Machine (Linear SVM)
 - Streamlit
-- Git and GitHub
+- Joblib
+- Matplotlib and Seaborn
 
-## Project Status
+## ⚙️ Project Workflow
+1. Dataset collection
+2. Data cleaning and preprocessing
+3. Exploratory Data Analysis
+4. TF-IDF feature extraction
+5. Model training and comparison
+6. Model evaluation
+7. Explainable AI
+8. Streamlit application development
+9. Cloud deployment
 
-Day 1: Project setup and GitHub integration.
+## 🤖 Model Comparison
 
-## Disclaimer
+| Algorithm | Accuracy |
+|---|---:|
+| Logistic Regression | 94.56% |
+| Multinomial Naive Bayes | 85.60% |
+| Linear SVM | 95.01% |
 
-TruthLens AI is an educational project.
-Its predictions do not independently verify
-the factual accuracy of news articles.
+**Best-performing model:** Linear SVM
 
-## Model Evaluation
-
-TruthLens AI uses a Linear Support Vector Machine (SVM) model for fake-like and real-like news classification.
-
-### Evaluation Metrics
+## 📊 Model Evaluation
 
 | Metric | Score |
 |---|---:|
 | Accuracy | 95.01% |
 | Precision | 94.65% |
 | Recall | 94.07% |
-| F1-Score | 94.36% |
-| ROC-AUC | 98.84% |
+| F1 Score | 94.36% |
+| ROC-AUC | 0.988 |
 
-### Evaluation Graphs
+These scores were obtained on the held-out test split of the processed dataset.
 
-#### Confusion Matrix
+### Confusion Matrix
 ![Confusion Matrix](screenshots/confusion_matrix.png)
 
-#### ROC Curve
+### ROC Curve
 ![ROC Curve](screenshots/roc_curve.png)
 
-### Note
-These results are based on the held-out test split of the WELFake dataset. Predictions indicate learned text patterns and do not establish whether a news article is factually true.
+### Dataset Visualisations
+![Label Distribution](screenshots/label_distribution.png)
+
+![Article Length Distribution](screenshots/article_length.png)
+
+## 💡 Explainable AI
+TruthLens AI identifies influential words that contribute to the model's prediction using feature contributions from the trained Linear SVM model.
+
+## 📂 Project Structure
+
+```text
+TruthLens-AI/
+├── app/
+│   └── app.py
+├── dataset/
+├── models/
+│   ├── best_model.joblib
+│   └── tfidf_vectorizer.joblib
+├── notebooks/
+│   └── eda.py
+├── screenshots/
+├── src/
+│   ├── fix_dataset.py
+│   ├── inspect_dataset.py
+│   ├── preprocess.py
+│   ├── tfidf_features.py
+│   ├── train_models.py
+│   ├── explain_prediction.py
+│   └── evaluate_model.py
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
+
+## 🚀 Run Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/vidyasherugar03/TruthLens-AI.git
+cd TruthLens-AI
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the application:
+
+```bash
+python -m streamlit run app/app.py
+```
+
+The trained model files must be available in the `models` directory.
+
+## ⚠️ Disclaimer
+This is an educational machine-learning project. Predictions are based on patterns learned from the dataset and do not independently verify whether a news article is factually true or false. Always consult reliable sources.
+
+## 👩‍💻 Developer
+Developed as an academic Data Science project to demonstrate practical skills in NLP, Machine Learning, Explainable AI and web application development.
+
+## 🔗 Project Links
+- **GitHub:** https://github.com/vidyasherugar03/TruthLens-AI
+- **Live Application:** https://truthlens-ai-ewdzctnpkf7pyvuywwbvj.streamlit.app/
